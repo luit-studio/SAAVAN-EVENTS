@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;1,400&family=Montserrat:wght@300;400;600&display=swap" rel="stylesheet">
+  <style>
+    .font-serif { font-family: 'Playfair Display', serif; }
+    .font-sans { font-family: 'Montserrat', sans-serif; }
+    html { scroll-behavior: smooth; }
+    
+    .bg-assam-heritage {
+      background-color: #fdfaf5;
+      background-image: url("data:image/svg+xml,%3Csvg width='80' height='80' viewBox='0 0 80 80' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='%23800000' fill-opacity='0.02' fill-rule='evenodd'%3E%3Cpath d='M11 18c3.866 0 7-3.134 7-7s-3.134-7-7-7-7 3.134-7 7 3.134 7 7 7zm48 25c3.866 0 7-3.134 7-7s-3.134-7-7-7-7 3.134-7 7 3.134 7 7 7zm-43-7c1.657 0 3-1.343 3-3s-1.343-3-3-3-3 1.343-3 3 1.343 3 3 3zm63 31c1.657 0 3-1.343 3-3s-1.343-3-3-3-3 1.343-3 3 1.343 3 3 3zM34 90c1.657 0 3-1.343 3-3s-1.343-3-3-3-3 1.343-3 3 1.343 3 3 3zm56-76c1.657 0 3-1.343 3-3s-1.343-3-3-3-3 1.343-3 3 1.343 3 3 3zM12 86c2.21 0 4-1.79 4-4s-1.79-4-4-4-4 1.79-4 4 1.79 4 4 4zm28-65c2.21 0 4-1.79 4-4s-1.79-4-4-4-4 1.79-4 4 1.79 4 4 4zm23-11c2.76 0 5-2.24 5-5s-2.24-5-5-5-5 2.24-5 5 2.24 5 5 5zm-6 60c2.21 0 4-1.79 4-4s-1.79-4-4-4-4 1.79-4 4 1.79 4 4 4zm29 22c2.76 0 5-2.24 5-5s-2.24-5-5-5-5 2.24-5 5 2.24 5 5 5zM32 32c2.76 0 5-2.24 5-5s-2.24-5-5-5-5 2.24-5 5 2.24 5 5 5zm21-17c1.105 0 2-.895 2-2s-.895-2-2-2-2 .895-2 2 .895 2 2 2zm5 51c1.105 0 2-.895 2-2s-.895-2-2-2-2 .895-2 2 .895 2 2 2zm33-33c1.105 0 2-.895 2-2s-.895-2-2-2-2 .895-2 2 .895 2 2 2zM9 49c1.105 0 2-.895 2-2s-.895-2-2-2-2 .895-2 2 .895 2 2 2zm58-16c1.105 0 2-.895 2-2s-.895-2-2-2-2 .895-2 2 .895 2 2 2zM27 63c1.105 0 2-.895 2-2s-.895-2-2-2-2 .895-2 2 .895 2 2 2zm-9-5c1.105 0 2-.895 2-2s-.895-2-2-2-2 .895-2 2 .895 2 2 2zm28-48c1.105 0 2-.895 2-2s-.895-2-2-2-2 .895-2 2 .895 2 2 2zM43 38c1.105 0 2-.895 2-2s-.895-2-2-2-2 .895-2 2 .895 2 2 2zM33 20c1.105 0 2-.895 2-2s-.895-2-2-2-2 .895-2 2 .895 2 2 2zM24 35c1.105 0 2-.895 2-2s-.895-2-2-2-2 .895-2 2 .895 2 2 2zm54 19c1.105 0 2-.895 2-2s-.895-2-2-2-2 .895-2 2 .895 2 2 2z'/%3E%3C/g%3E%3C/svg%3E");
+    }
+
+    
+  </style>
+</head>
+<body class="bg-assam-heritage text-gray-800 font-sans antialiased">
+
+
+  <nav class="border-b border-gray-100 py-4 bg-white/80 backdrop-blur-sm sticky top-0 z-50">
+    <div class="flex items-center justify-between px-10 md:px-20 overflow-hidden">
+      <a href="index.html" class="bg-[#800000] px-4 py-2 rounded-full hover:opacity-90 transition-opacity">
+        <span class="text-white font-serif text-sm">SAAVAN</span>
+      </a>
+
+      <ul class="flex justify-center items-center space-x-6 md:space-x-8 text-[10px] tracking-[0.2em] text-gray-500 font-thin">
+        <li class="hover:text-black cursor-pointer"><a href="index.html">HOME</a></li>
+        <li class="text-[#800000] font-bold cursor-pointer"><a href="about.html">ABOUT</a></li>
+        <li class="hover:text-black cursor-pointer"><a href="index.html#services">SERVICES</a></li>
+        <li class="hover:text-black cursor-pointer"><a href="index.html#portfolio">PORTFOLIO</a></li>
+        <li class="hover:text-black cursor-pointer"><a href="#contact">CONTACT</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <section class="max-w-7xl mx-auto px-6 pt-24 pb-12 text-center">
+    <span class="text-[10px] tracking-[0.4em] text-[#800000] font-bold uppercase block mb-4">Our Journey</span>
+    <h1 class="font-serif italic text-5xl md:text-7xl text-gray-800 mb-8">Crafting Legacies in the <br>Heart of Assam</h1>
+    <div class="w-20 h-[1px] bg-[#800000] mx-auto opacity-30"></div>
+  </section>
+
+  <section class="max-w-6xl mx-auto px-6 py-20">
+    <div class="grid grid-cols-1 md:grid-cols-2 gap-16 items-center">
+      <div class="order-2 md:order-1">
+        <h2 class="font-serif text-3xl mb-6">Born from Tradition</h2>
+        <p class="text-gray-500 text-sm leading-relaxed mb-6 font-light">
+          Founded in Guwahati, Saavan Heritage Events began with a simple observation: modern celebrations were losing their soulful connection to the earth and our ancestors. We set out to bridge the gap between contemporary luxury and the raw, rhythmic beauty of Northeast Indian traditions.
+        </p>
+        <p class="text-gray-500 text-sm leading-relaxed font-light">
+          Whether it's the intricate weaving of a <i>Muga Mekhela Sador</i> or the sacred chanting of a <i>Vedic Mahurat</i>, we believe that the details of our heritage are what make a wedding truly unforgettable. We don't just plan events; we preserve stories.
+        </p>
+      </div>
+      <div class="order-1 md:order-2">
+        <img src="https://i.pinimg.com/1200x/90/bd/21/90bd213217f6e8d5987626daccd15f52.jpg" 
+             alt="Heritage Detail" class="rounded-sm shadow-2xl">
+      </div>
+    </div>
+  </section>
+
+  <section class="bg-white py-24 border-y border-gray-50">
+    <div class="max-w-7xl mx-auto px-6 grid grid-cols-1 md:grid-cols-3 gap-12 text-center">
+      <div>
+        <span class="font-serif text-[#800000] text-3xl italic block mb-4">01.</span>
+        <h3 class="tracking-widest text-xs font-bold uppercase mb-4">Authentic Artistry</h3>
+        <p class="text-gray-400 text-xs leading-relaxed px-6">Collaborating exclusively with local artisans, weavers, and folk performers to keep our culture alive.</p>
+      </div>
+      <div>
+        <span class="font-serif text-[#800000] text-3xl italic block mb-4">02.</span>
+        <h3 class="tracking-widest text-xs font-bold uppercase mb-4">Soulful Luxury</h3>
+        <p class="text-gray-400 text-xs leading-relaxed px-6">Blending high-end production with the quiet, intentional grace of traditional Assamese hospitality.</p>
+      </div>
+      <div>
+        <span class="font-serif text-[#800000] text-3xl italic block mb-4">03.</span>
+        <h3 class="tracking-widest text-xs font-bold uppercase mb-4">Sustainable Roots</h3>
+        <p class="text-gray-400 text-xs leading-relaxed px-6">Using locally sourced florals and hand-crafted decor to ensure every celebration respects the land.</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="max-w-5xl mx-auto px-6 py-32">
+    <div class="flex flex-col md:flex-row gap-16 items-start">
+      <div class="w-full md:w-1/3">
+            <img src="https://i.pinimg.com/736x/87/36/ff/8736ffe591cb918fba327bb25a0f80d7.jpg" 
+             alt="Saavan Baruah" class="rounded-full  transition-all duration-1000 border-4 border-[#fdfaf5] shadow-xl">
+      </div>
+      <div class="w-full md:w-2/3">
+        <h3 class="font-serif italic text-3xl text-gray-800 mb-6">A Message from Saavan</h3>
+        <p class="text-gray-500 text-sm leading-relaxed mb-6 italic">
+          "I remember watching my grandmother prepare for a Joron ceremony—the meticulous care, the specific placement of the tamul-pan, the quiet reverence for the ritual. That sense of 'purpose' is what I bring to every wedding we design today. My mission is to ensure that while your wedding is grand, its soul remains deeply rooted in the soil of Assam."
+        </p>
+        <div class="flex items-center gap-4">
+          <div class="w-8 h-[1px] bg-[#800000]"></div>
+          <p class="font-serif text-lg text-gray-700">Founder & Creative Director</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="bg-[#800000] py-20 text-center text-white">
+    <h3 class="font-serif italic text-3xl mb-8">Ready to write your chapter?</h3>
+    <a href="index.html#contact" class="inline-block border border-white/30 px-12 py-4 text-[10px] tracking-[0.4em] uppercase hover:bg-white hover:text-[#800000] transition-all">Get in Touch</a>
+  </section>
+
+  <footer class="bg-white border-t border-gray-100 pt-24 pb-12">
+      <div
+        class="max-w-7xl mx-auto px-6 grid grid-cols-1 md:grid-cols-3 gap-16 mb-20"
+      >
+        <div>
+          <h5 class="font-serif italic text-xl mb-6">Stay Inspired</h5>
+          <p class="text-xs text-gray-400 tracking-widest uppercase mb-4">
+            Join our monthly newsletter
+          </p>
+          <div class="flex border-b border-gray-300 pb-2">
+            <input
+              type="email"
+              placeholder="Email Address"
+              class="bg-transparent text-sm w-full outline-none placeholder-gray-300 font-light"
+            />
+            <button
+              class="text-[10px] tracking-widest uppercase font-bold text-gray-600"
+            >
+              Join
+            </button>
+          </div>
+        </div>
+
+        <div class="text-center">
+          <h2
+            class="font-serif text-3xl tracking-widest text-[#800000] mb-6 uppercase"
+          >
+            SAAVAN
+          </h2>
+          <div
+            class="flex justify-center space-x-6 text-gray-400 text-xs tracking-widest"
+          >
+            <a href="#" class="hover:text-black">INSTAGRAM</a>
+            <a href="#" class="hover:text-black">PINTEREST</a>
+            <a href="#" class="hover:text-black">FACEBOOK</a>
+          </div>
+        </div>
+
+        <div class="md:text-right">
+          <h5 class="font-serif italic text-xl mb-6">Get in Touch</h5>
+          <p class="text-gray-500 text-sm font-light mb-1">
+            hello@saavanevents.com
+          </p>
+          <p class="text-gray-500 text-sm font-light mb-1">Guwahati, Assam</p>
+          <p class="text-gray-500 text-sm font-light">+91 8638695791</p>
+        </div>
+      </div>
+
+      <div class="text-center border-t border-gray-50 pt-12">
+        <p class="text-[10px] tracking-[0.3em] text-gray-600 uppercase italic">
+          &copy; 2026 Saavan Events Design Co. All Rights Reserved.
+        </p>
+      </div>
+    </footer>
+
+</body>
+</html>
