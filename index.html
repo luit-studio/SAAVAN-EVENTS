@@ -1,0 +1,734 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;1,400&family=Montserrat:wght@300;400;600&display=swap"
+      rel="stylesheet"
+    />
+    <style>
+      .font-serif {
+        font-family: "Playfair Display", serif;
+      }
+      .font-sans {
+        font-family: "Montserrat", sans-serif;
+      }
+
+      .bg-assam-heritage {
+        background-color: #fdfaf5;
+        background-image: url("data:image/svg+xml,%3Csvg width='80' height='80' viewBox='0 0 80 80' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='%23800000' fill-opacity='0.02' fill-rule='evenodd'%3E%3Cpath d='M11 18c3.866 0 7-3.134 7-7s-3.134-7-7-7-7 3.134-7 7 3.134 7 7 7zm48 25c3.866 0 7-3.134 7-7s-3.134-7-7-7-7 3.134-7 7 3.134 7 7 7zm-43-7c1.657 0 3-1.343 3-3s-1.343-3-3-3-3 1.343-3 3 1.343 3 3 3zm63 31c1.657 0 3-1.343 3-3s-1.343-3-3-3-3 1.343-3 3 1.343 3 3 3zM34 90c1.657 0 3-1.343 3-3s-1.343-3-3-3-3 1.343-3 3 1.343 3 3 3zm56-76c1.657 0 3-1.343 3-3s-1.343-3-3-3-3 1.343-3 3 1.343 3 3 3zM12 86c2.21 0 4-1.79 4-4s-1.79-4-4-4-4 1.79-4 4 1.79 4 4 4zm28-65c2.21 0 4-1.79 4-4s-1.79-4-4-4-4 1.79-4 4 1.79 4 4 4zm23-11c2.76 0 5-2.24 5-5s-2.24-5-5-5-5 2.24-5 5 2.24 5 5 5zm-6 60c2.21 0 4-1.79 4-4s-1.79-4-4-4-4 1.79-4 4 1.79 4 4 4zm29 22c2.76 0 5-2.24 5-5s-2.24-5-5-5-5 2.24-5 5 2.24 5 5 5zM32 32c2.76 0 5-2.24 5-5s-2.24-5-5-5-5 2.24-5 5 2.24 5 5 5zm21-17c1.105 0 2-.895 2-2s-.895-2-2-2-2 .895-2 2 .895 2 2 2zm5 51c1.105 0 2-.895 2-2s-.895-2-2-2-2 .895-2 2 .895 2 2 2zm33-33c1.105 0 2-.895 2-2s-.895-2-2-2-2 .895-2 2 .895 2 2 2zM9 49c1.105 0 2-.895 2-2s-.895-2-2-2-2 .895-2 2 .895 2 2 2zm58-16c1.105 0 2-.895 2-2s-.895-2-2-2-2 .895-2 2 .895 2 2 2zM27 63c1.105 0 2-.895 2-2s-.895-2-2-2-2 .895-2 2 .895 2 2 2zm-9-5c1.105 0 2-.895 2-2s-.895-2-2-2-2 .895-2 2 .895 2 2 2zm28-48c1.105 0 2-.895 2-2s-.895-2-2-2-2 .895-2 2 .895 2 2 2zM43 38c1.105 0 2-.895 2-2s-.895-2-2-2-2 .895-2 2 .895 2 2 2zm33 20c1.105 0 2-.895 2-2s-.895-2-2-2-2 .895-2 2 .895 2 2 2zM24 35c1.105 0 2-.895 2-2s-.895-2-2-2-2 .895-2 2 .895 2 2 2zm54 19c1.105 0 2-.895 2-2s-.895-2-2-2-2 .895-2 2 .895 2 2 2zM10 8c1.105 0 2-.895 2-2s-.895-2-2-2-2 .895-2 2 .895 2 2 2zm66 66c1.105 0 2-.895 2-2s-.895-2-2-2-2 .895-2 2 .895 2 2 2zM48 6c1.105 0 2-.895 2-2s-.895-2-2-2-2 .895-2 2 .895 2 2 2zm16 32c1.105 0 2-.895 2-2s-.895-2-2-2-2 .895-2 2 .895 2 2 2zM40 62c1.105 0 2-.895 2-2s-.895-2-2-2-2 .895-2 2 .895 2 2 2zm16 16c1.105 0 2-.895 2-2s-.895-2-2-2-2 .895-2 2 .895 2 2 2zm-32 0c1.105 0 2-.895 2-2s-.895-2-2-2-2 .895-2 2 .895 2 2 2zm-16-16c1.105 0 2-.895 2-2s-.895-2-2-2-2 .895-2 2 .895 2 2 2zm32-32c1.105 0 2-.895 2-2s-.895-2-2-2-2 .895-2 2 .895 2 2 2zm16-16c1.105 0 2-.895 2-2s-.895-2-2-2-2 .895-2 2 .895 2 2 2zm-16-16c1.105 0 2-.895 2-2s-.895-2-2-2-2 .895-2 2 .895 2 2 2zm-16 16c1.105 0 2-.895 2-2s-.895-2-2-2-2 .895-2 2 .895 2 2 2z'/%3E%3C/g%3E%3C/svg%3E");
+      }
+
+      .gamosa-strip {
+        background: #800000;
+        background-image: linear-gradient(90deg, transparent 50%, #ffffff 50%);
+        background-size: 10px 100%;
+        height: 4px;
+      }
+    </style>
+  </head>
+  <body class="bg-assam-heritage text-gray-800 font-sans antialiased">
+    <div
+      class="bg-[#2d2d2d] text-white text-[10px] tracking-widest py-2 px-8 text-right uppercase"
+    >
+      Schedule A Free Mahurat Consultation &rarr;
+    </div>
+
+    <nav
+      class="border-b border-gray-100 py-4 bg-white/80 backdrop-blur-sm sticky top-0 z-50"
+    >
+      <div class="flex items-center justify-between px-20 overflow-hidden">
+        <div
+          class="bg-[#800000] px-4 py-2 rounded-full text-maroon font-serif text-sm mb-2"
+        >
+          <span class="text-white font-serif text-sm">SAAVAN</span>
+        </div>
+
+        <ul
+          class="flex justify-center items-center space-x-8 text-[11px] tracking-[0.2em] text-gray-500 font-thin"
+        >
+          <li class="hover:text-black cursor-pointer">HOME</li>
+          <li class="hover:text-black cursor-pointer">ABOUT</li>
+          <li class="hover:text-black cursor-pointer">SERVICES</li>
+          <li class="hover:text-black cursor-pointer">PORTFOLIO</li>
+          <li class="hover:text-black cursor-pointer">BLOG</li>
+          <li class="hover:text-black cursor-pointer">CONTACT</li>
+        </ul>
+      </div>
+    </nav>
+
+    <section
+      class="relative h-[80vh] flex items-center justify-center overflow-hidden"
+    >
+      <img
+        src="https://images.unsplash.com/photo-1745573673416-66e829644ae9?q=80&w=1334&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+        alt="Assam Tea Garden"
+        class="absolute inset-0 w-full h-full object-cover brightness-[0.65]"
+      />
+
+      <div class="relative text-center text-white z-10">
+        <h1
+          class="font-serif text-6xl md:text-8xl tracking-widest leading-none"
+        >
+          SAAVAN<br /><span class="ml-4 italic text-4xl md:text-5xl opacity-90"
+            >Heritage Events</span
+          >
+        </h1>
+      </div>
+    </section>
+
+    <section class="max-w-6xl mx-auto px-6 py-24 border-t border-gray-100">
+      <div class="flex flex-col md:flex-row items-center gap-16">
+        <div class="w-full md:w-1/2 relative">
+          <div
+            class="absolute -top-4 -left-4 w-full h-full border border-gray-100 z-0"
+          ></div>
+          <img
+            src="https://i.pinimg.com/736x/fa/ca/c3/facac3a567eb56d4a7e155bbeb297485.jpg"
+            alt="Founder"
+            class="relative z-10 w-full hover:grayscale grayscale-0 transition-all duration-1000 shadow-xl"
+          />
+        </div>
+        <div class="w-full md:w-1/2">
+          <span
+            class="text-[10px] tracking-[0.4em] text-maroon font-bold uppercase text-[#800000]"
+            >The Heart Behind the Brand</span
+          >
+          <h2 class="font-serif italic text-4xl text-gray-800 mt-4 mb-6">
+            Inspired by Vedic Traditions & Assamese Grace
+          </h2>
+          <p class="text-gray-500 text-sm leading-relaxed mb-6 font-light">
+            With over a decade of experience in the heart of Northeast India, we
+            believe every celebration is a canvas for your cultural story. Our
+            approach is quiet, intentional, and deeply personal. We don't just
+            plan logistics; we curate moments that honor the "Joron" and the
+            "Sangeet" alike.
+          </p>
+          <p class="font-serif italic text-lg text-gray-700">
+            — Saavan Baruah, Founder
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <section class="max-w-7xl mx-auto px-6 py-20 lg:py-32">
+      <div class="grid grid-cols-1 lg:grid-cols-4 gap-12 items-center">
+        <div class="hidden lg:block h-80 overflow-hidden">
+          <img
+            src="https://i.pinimg.com/1200x/fd/d6/04/fdd604d7ef90f4156124098fd2cbc990.jpg"
+            class="w-full h-full object-cover"
+            alt="Venue"
+          />
+        </div>
+
+        <div class="lg:col-span-2 text-center px-4">
+          <span
+            class="text-[10px] tracking-[0.3em] text-gray-400 uppercase block mb-4"
+            >Ready to bring your vision to life?</span
+          >
+          <h2 class="font-serif italic text-3xl md:text-4xl text-gray-700 mb-6">
+            Let's Start Planning a Day You'll Always Remember
+          </h2>
+          <p
+            class="text-gray-500 text-sm leading-relaxed max-w-md mx-auto mb-8 font-light"
+          >
+            From the scent of fresh marigolds to the rhythmic beat of the Dhol,
+            we handle every detail with precision so you can be present in every
+            moment.
+          </p>
+          <div class="flex flex-col sm:flex-row justify-center gap-4">
+            <button
+              class="hover:scale-105 transition-transform text-white text-[10px] tracking-widest uppercase px-8 py-4 bg-[#800000] transition-colors"
+            >
+              View Our Work
+            </button>
+            <button
+              class="border border-gray-300 text-gray-600 text-[10px] tracking-widest uppercase px-8 py-4 hover:bg-gray-50 transition-colors hover:scale-105 transition-transform"
+            >
+              View Our Services
+            </button>
+          </div>
+        </div>
+
+        <div class="hidden lg:block h-80 overflow-hidden">
+          <img
+            src="https://i.pinimg.com/736x/c6/61/ce/c661ce996617cffb686a21846ec4dc43.jpg"
+            class="w-full h-full object-cover"
+            alt="Catering"
+          />
+        </div>
+      </div>
+    </section>
+
+    <section class="border-y border-gray-100 py-12 mb-20 bg-white">
+      <div
+        class="max-w-5xl mx-auto px-6 flex flex-wrap justify-center items-center gap-8 md:gap-16"
+      >
+        <span class="text-[10px] tracking-widest text-gray-400 font-bold"
+          >SEEN IN:</span
+        >
+        <span class="font-serif text-xl lowercase text-gray-600"
+          >Vogue India</span
+        >
+        <span
+          class="font-serif text-xl uppercase tracking-tighter text-gray-600"
+          >WeddingSutra</span
+        >
+        <span class="font-serif text-xl italic text-gray-600"
+          >Assam Tribune</span
+        >
+        <span class="font-serif text-xl text-gray-600">Southern Bride</span>
+      </div>
+    </section>
+
+    <section class="max-w-7xl mx-auto px-6 pb-24">
+      <h3 class="font-serif text-2xl text-center text-gray-700 mb-12">
+        Our Recent Work
+      </h3>
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+        <div class="aspect-[3/4] overflow-hidden">
+          <img
+            src="https://i.pinimg.com/1200x/f1/dc/dc/f1dcdc5d6bf999425b5c92e736393f68.jpg"
+            class="w-full h-full object-cover hover:scale-105 transition-transform duration-700"
+          />
+        </div>
+        <div class="aspect-[3/4] overflow-hidden">
+            <video src="./assets/Pink Flower Decor   Minimal wedding decor Outdoor wedding decorations Wedding design decoration 720p.mp4" autoplay muted loop
+            
+            class="w-full h-full object-cover hover:scale-105 transition-transform duration-700"
+            
+            ></video>
+          <!-- <img
+            src="https://i.pinimg.com/1200x/9f/76/6a/9f766a8489e3ef873f1f926ba5313a25.jpg"
+            class="w-full h-full object-cover hover:scale-105 transition-transform duration-700"
+          /> -->
+        </div>
+        <div class="aspect-[3/4] overflow-hidden">
+          <img
+            src="https://i.pinimg.com/1200x/02/da/04/02da0417a34ae49f0ce6fb989ba32dbf.jpg"
+            class="w-full h-full object-cover hover:scale-105 transition-transform duration-700"
+          />
+        </div>
+      </div>
+      <div class="text-right mt-6">
+        <a
+          href="#"
+          class="text-[11px] tracking-widest text-gray-400 uppercase hover:text-[#800000]"
+          >View All Projects &rarr;</a
+        >
+      </div>
+    </section>
+
+    <!-- services -->
+
+    <section class="bg-white/60 py-24">
+      <div class="max-w-7xl mx-auto px-6 text-center">
+        <h3 class="font-serif text-3xl text-gray-800 mb-16">Our Services</h3>
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-12">
+          <div class="group cursor-pointer">
+            <div
+              class="overflow-hidden mb-6 aspect-square rounded-full border border-gray-100"
+            >
+              <img
+                src="https://i.pinimg.com/736x/2c/da/60/2cda60103bfd423f970f7cb3ba623414.jpg"
+                class="w-full h-full object-cover group-hover:grayscale grayscale-0 group-hover:scale-105 transition-all duration-700"
+              />
+            </div>
+            <h4 class="font-serif italic text-xl mb-2">Heritage Planning</h4>
+            <p class="text-[11px] tracking-widest text-gray-500 uppercase">
+              From Mandap to Execution
+            </p>
+          </div>
+          <div class="group cursor-pointer">
+            <div
+              class="overflow-hidden mb-6 aspect-square rounded-full border border-gray-100"
+            >
+              <img
+                src="https://i.pinimg.com/1200x/5c/e2/11/5ce2115ff4945cbced1fa39712de1857.jpg"
+                class="w-full h-full object-cover group-hover:grayscale grayscale-0 group-hover:scale-105 transition-all duration-700"
+              />
+            </div>
+            <h4 class="font-serif italic text-xl mb-2">Design & Styling</h4>
+            <p class="text-[11px] tracking-widest text-gray-500 uppercase">
+              Aesthetic Cultural Direction
+            </p>
+          </div>
+          <div class="group cursor-pointer">
+            <div
+              class="overflow-hidden mb-6 aspect-square rounded-full border border-gray-100"
+            >
+              <img
+                src="https://i.pinimg.com/736x/c9/cd/8b/c9cd8b8b4940e3c6d8bf4dbae71e9c48.jpg"
+                class="w-full h-full object-cover group-hover:grayscale grayscale-0 group-hover:scale-105 transition-all duration-700"
+              />
+            </div>
+            <h4 class="font-serif italic text-xl mb-2">Ritual Coordination</h4>
+            <p class="text-[11px] tracking-widest text-gray-500 uppercase">
+              Traditional Ceremony Support
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- gallery -->
+
+    <section class="max-w-7xl mx-auto px-6 py-24">
+      <div class="text-center mb-20">
+        <h3 class="font-serif text-4xl text-gray-800">Our Heritage Gallery</h3>
+        <div class="w-16 h-[2px] bg-[#800000] mx-auto mt-4 opacity-30"></div>
+      </div>
+
+      <div class="columns-2 md:columns-3 lg:columns-4 gap-4 space-y-4">
+        <div
+          class="relative overflow-hidden rounded-lg break-inside-avoid group cursor-pointer shadow-md"
+        >
+          <img
+            src="https://i.pinimg.com/1200x/5b/78/ad/5b78adfb55a86b716e02ceda9943e626.jpg"
+            class="w-full h-auto object-cover transition-transform duration-1000 group-hover:scale-110"
+            alt="Assamese Wedding Decor"
+          />
+          <div
+            class="absolute inset-0 bg-black/40 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-end p-4"
+          >
+            <p class="text-white text-[10px] tracking-widest uppercase">
+              Mandap Details
+            </p>
+          </div>
+        </div>
+
+        <div
+          class="relative overflow-hidden rounded-lg break-inside-avoid group cursor-pointer shadow-md"
+        >
+          <img
+            src="https://i.pinimg.com/1200x/e9/b2/ac/e9b2ac6f5079c07d552b8599fcd516e6.jpg"
+            class="w-full h-auto object-cover transition-transform duration-1000 group-hover:scale-110"
+            alt="Traditional Bride"
+          />
+          <div
+            class="absolute inset-0 bg-black/40 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-end p-4"
+          >
+            <p class="text-white text-[10px] tracking-widest uppercase">
+              Muga Silk Elegance
+            </p>
+          </div>
+        </div>
+
+        <div
+          class="relative overflow-hidden rounded-lg break-inside-avoid group cursor-pointer shadow-md"
+        >
+          <img
+            src="https://i.pinimg.com/736x/27/e1/ca/27e1caafa48a12c266ffdae097a06a34.jpg"
+            class="w-full h-auto object-cover transition-transform duration-1000 group-hover:scale-110"
+            alt="Ceremony Highlights"
+          />
+          <div
+            class="absolute inset-0 bg-black/40 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-end p-4"
+          >
+            <p class="text-white text-[10px] tracking-widest uppercase">
+              The Rituals
+            </p>
+          </div>
+        </div>
+
+        <div
+          class="relative overflow-hidden rounded-lg break-inside-avoid group cursor-pointer shadow-md"
+        >
+          <img
+            src="https://i.pinimg.com/1200x/e5/ba/9c/e5ba9ce132711d61bdd5517b88cb4575.jpg"
+            class="w-full h-auto object-cover transition-transform duration-1000 group-hover:scale-110"
+            alt="Floral Arrangements"
+          />
+          <div
+            class="absolute inset-0 bg-black/40 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-end p-4"
+          >
+            <p class="text-white text-[10px] tracking-widest uppercase">
+              Floral Design
+            </p>
+          </div>
+        </div>
+
+        <div
+          class="relative overflow-hidden rounded-lg break-inside-avoid group cursor-pointer shadow-md"
+        >
+          <img
+            src="https://i.pinimg.com/736x/f5/a6/fb/f5a6fb4744165ce33c83bbc1a737608c.jpg"
+            class="w-full h-auto object-cover transition-transform duration-1000 group-hover:scale-110"
+            alt="Traditional Joron Ceremony"
+          />
+          <div
+            class="absolute inset-0 bg-black/40 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-end p-4"
+          >
+            <p class="text-white text-[10px] tracking-widest uppercase">
+              JoronExchange
+            </p>
+          </div>
+        </div>
+
+        <div
+          class="relative overflow-hidden rounded-lg break-inside-avoid group cursor-pointer shadow-md"
+        >
+          <img
+            src="https://i.pinimg.com/1200x/83/7e/5b/837e5ba5c3d3e056e1c6365561bfa7bd.jpg"
+            class="w-full h-auto object-cover transition-transform duration-1000 group-hover:scale-110"
+            alt="Assamese Cuisine Presentation"
+          />
+          <div
+            class="absolute inset-0 bg-black/40 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-end p-4"
+          >
+            <p class="text-white text-[10px] tracking-widest uppercase">
+              Assamese Catering
+            </p>
+          </div>
+        </div>
+
+        <div
+          class="relative overflow-hidden rounded-lg break-inside-avoid group cursor-pointer shadow-md col-span-2"
+        >
+          <img
+            src="https://i.pinimg.com/1200x/58/5d/23/585d239df2fe1abd2608cfa89c32bffb.jpg"
+            class="w-full h-auto object-cover transition-transform duration-1000 group-hover:scale-105"
+            alt="Grand Reception Styling"
+          />
+          <div
+            class="absolute inset-0 bg-black/40 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-end p-4"
+          >
+            <p class="text-white text-[10px] tracking-widest uppercase">
+              Reception Styling
+            </p>
+          </div>
+        </div>
+
+        <div
+          class="relative overflow-hidden rounded-lg break-inside-avoid group cursor-pointer shadow-md"
+        >
+          <img
+            src="https://i.pinimg.com/1200x/df/98/bf/df98bf7db46fcc4740fdf8d69db483e4.jpg"
+            class="w-full h-auto object-cover transition-transform duration-1000 group-hover:scale-110"
+            alt="Groom Accessories"
+          />
+          <div
+            class="absolute inset-0 bg-black/40 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-end p-4"
+          >
+            <p class="text-white text-[10px] tracking-widest uppercase">
+              Groom Elegance
+            </p>
+          </div>
+        </div>
+
+        <div
+          class="relative overflow-hidden rounded-lg break-inside-avoid group cursor-pointer shadow-md col-span-2"
+        >
+          <img
+            src="https://i.pinimg.com/736x/c9/cd/8b/c9cd8b8b4940e3c6d8bf4dbae71e9c48.jpg"
+            class="w-full h-auto object-cover transition-transform duration-1000 group-hover:scale-105"
+            alt="Entrance Decor"
+          />
+          <div
+            class="absolute inset-0 bg-black/40 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-end p-4"
+          >
+            <p class="text-white text-[10px] tracking-widest uppercase">
+              Cultural Welcomes
+            </p>
+          </div>
+        </div>
+
+        <div
+          class="relative overflow-hidden rounded-lg break-inside-avoid group cursor-pointer shadow-md"
+        >
+          <img
+            src="https://i.pinimg.com/736x/52/02/c9/5202c97cd1ea71c6f54b0640711826e1.jpg"
+            class="w-full h-auto object-cover transition-transform duration-1000 group-hover:scale-110"
+            alt="Pre-wedding rituals"
+          />
+          <div
+            class="absolute inset-0 bg-black/40 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-end p-4"
+          >
+            <p class="text-white text-[10px] tracking-widest uppercase">
+              Adhibas Rituals
+            </p>
+          </div>
+        </div>
+         <div
+          class="relative overflow-hidden rounded-lg break-inside-avoid group cursor-pointer shadow-md"
+        >
+          <img
+            src="https://i.pinimg.com/1200x/0c/ff/d1/0cffd1b7077e475efeafcbbbcb7a8a2e.jpg"
+            class="w-full h-auto object-cover transition-transform duration-1000 group-hover:scale-110"
+            alt="Pre-wedding rituals"
+          />
+          <div
+            class="absolute inset-0 bg-black/40 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-end p-4"
+          >
+            <p class="text-white text-[10px] tracking-widest uppercase">
+              Mehandi Celebrations
+            </p>
+          </div>
+        </div>
+         <div
+          class="relative overflow-hidden rounded-lg break-inside-avoid group cursor-pointer shadow-md"
+        >
+          <img
+            src="https://i.pinimg.com/736x/12/12/ea/1212ea2eec62df13c7f5bf51dc45c969.jpg"
+            class="w-full h-auto object-cover transition-transform duration-1000 group-hover:scale-110"
+            alt="Pre-wedding rituals"
+          />
+          <div
+            class="absolute inset-0 bg-black/40 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-end p-4"
+          >
+            <p class="text-white text-[10px] tracking-widest uppercase">
+              Adhibas Rituals
+            </p>
+          </div>
+        </div>
+         <div
+          class="relative overflow-hidden rounded-lg break-inside-avoid group cursor-pointer shadow-md"
+        >
+          <img
+            src="https://i.pinimg.com/736x/e9/29/74/e92974671b1b7e2a8c3c50862fd10034.jpg"
+            class="w-full h-auto object-cover transition-transform duration-1000 group-hover:scale-110"
+            alt="Pre-wedding rituals"
+          />
+          <div
+            class="absolute inset-0 bg-black/40 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-end p-4"
+          >
+            <p class="text-white text-[10px] tracking-widest uppercase">
+              Haldi Ceremony
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- testimonials -->
+
+    <section class="bg-[#fcfaf8] py-24 text-center border-y border-gray-100 relative overflow-hidden">
+  <div class="max-w-4xl mx-auto px-6 relative">
+    
+    <span class="text-[60px] text-[#800000] opacity-10 font-serif absolute -top-10 left-1/2 -translate-x-1/2">“</span>
+
+    <div class="relative min-h-[300px] flex items-center justify-center">
+      
+      <div class="testimonial-slide transition-all duration-700 opacity-100 transform translate-x-0 absolute inset-0 flex flex-col items-center justify-center">
+        <p class="font-serif italic text-2xl md:text-3xl text-gray-700 leading-relaxed mb-8 max-w-2xl">
+          "Saavan turned our vision into a reality that honored our roots beautifully. Her attention to cultural detail and calm presence made our wedding day completely seamless."
+        </p>
+        <div class="w-12 h-[1px] bg-[#800000] mb-4"></div>
+        <span class="text-[10px] tracking-[0.3em] text-gray-400 uppercase font-semibold italic">Ananya & Kabir • Spring 2025</span>
+      </div>
+
+      <div class="testimonial-slide transition-all duration-700 opacity-0 transform translate-x-12 absolute inset-0 flex flex-col items-center justify-center pointer-events-none">
+        <p class="font-serif italic text-2xl md:text-3xl text-gray-700 leading-relaxed mb-8 max-w-2xl">
+          "The most authentic 'Joron' setup we've ever seen. Saavan's team managed the fusion of our Punjabi and Assamese traditions with such grace and elegance."
+        </p>
+        <div class="w-12 h-[1px] bg-[#800000] mb-4"></div>
+        <span class="text-[10px] tracking-[0.3em] text-gray-400 uppercase font-semibold italic">Ishani & Rahul • Winter 2024</span>
+      </div>
+
+      <div class="testimonial-slide transition-all duration-700 opacity-0 transform translate-x-12 absolute inset-0 flex flex-col items-center justify-center pointer-events-none">
+        <p class="font-serif italic text-2xl md:text-3xl text-gray-700 leading-relaxed mb-8 max-w-2xl">
+          "From the Sualkuchi silk drapes to the traditional Gayan-Bayan entry, every moment felt like a tribute to our heritage. Truly the best in Northeast India."
+        </p>
+        <div class="w-12 h-[1px] bg-[#800000] mb-4"></div>
+        <span class="text-[10px] tracking-[0.3em] text-gray-400 uppercase font-semibold italic">Devi & Siddharth • Autumn 2025</span>
+      </div>
+
+    </div>
+
+    <button onclick="changeSlide(-1)" class="absolute left-0 top-1/2 -translate-y-1/2 text-gray-300 hover:text-[#800000] transition-colors p-2">
+      <svg width="30" height="30" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1" stroke-linecap="round" stroke-linejoin="round"><path d="m15 18-6-6 6-6"/></svg>
+    </button>
+    <button onclick="changeSlide(1)" class="absolute right-0 top-1/2 -translate-y-1/2 text-gray-300 hover:text-[#800000] transition-colors p-2">
+      <svg width="30" height="30" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1" stroke-linecap="round" stroke-linejoin="round"><path d="m9 18 6-6-6-6"/></svg>
+    </button>
+
+    <div class="flex justify-center space-x-3 mt-12">
+      <div class="dot w-1.5 h-1.5 rounded-full bg-[#800000] transition-all duration-300"></div>
+      <div class="dot w-1.5 h-1.5 rounded-full bg-gray-200 transition-all duration-300"></div>
+      <div class="dot w-1.5 h-1.5 rounded-full bg-gray-200 transition-all duration-300"></div>
+    </div>
+  </div>
+</section>
+
+
+
+    <section id="contact" class="max-w-4xl mx-auto px-6 py-24">
+      <div class="text-center mb-16">
+        <h3 class="font-serif text-3xl text-gray-800 mb-4">Inquire</h3>
+        <p class="text-gray-400 text-xs tracking-widest uppercase">
+          Planning your heritage celebration
+        </p>
+      </div>
+
+      <form class="grid grid-cols-1 md:grid-cols-2 gap-x-12 gap-y-10">
+        <div class="border-b border-gray-200 pb-2">
+          <label
+            class="block text-[10px] uppercase tracking-widest text-gray-800 mb-1"
+            >Full Name</label
+          >
+          <input
+            type="text"
+            class="w-full bg-transparent outline-none text-sm font-light py-1"
+          />
+        </div>
+        <div class="border-b border-gray-200 pb-2">
+          <label
+            class="block text-[10px] uppercase tracking-widest text-gray-800 mb-1"
+            >Email Address</label
+          >
+          <input
+            type="email"
+            class="w-full bg-transparent outline-none text-sm font-light py-1"
+          />
+        </div>
+        <div class="border-b border-gray-200 pb-2">
+          <label
+            class="block text-[10px] uppercase tracking-widest text-gray-800 mb-1"
+            >Event Date</label
+          >
+          <input
+            type="text"
+            placeholder="DD / MM / YY"
+            class="w-full bg-transparent outline-none text-sm font-light py-1"
+          />
+        </div>
+        <div class="border-b border-gray-200 pb-2">
+          <label
+            class="block text-[10px] uppercase tracking-widest text-gray-800 mb-1"
+            >Venue Location</label
+          >
+          <input
+            type="text"
+            placeholder="e.g. Guwahati, Delhi"
+            class="w-full bg-transparent outline-none text-sm font-light py-1"
+          />
+        </div>
+        <div class="md:col-span-2 border-b border-gray-200 pb-2">
+          <label
+            class="block text-[10px] uppercase tracking-widest text-gray-800 mb-1"
+            >How can we help?</label
+          >
+          <textarea
+            rows="3"
+            class="w-full bg-transparent outline-none text-sm font-light py-1 resize-none"
+          ></textarea>
+        </div>
+        <div class="md:col-span-2 text-center mt-6">
+          <button
+            type="submit"
+            class="bg-[#800000] rounded-md text-white text-[11px] tracking-[0.3em] uppercase px-12 py-5 hover:scale-95 transition-transform"
+          >
+            Send Inquiry
+          </button>
+        </div>
+      </form>
+    </section>
+
+    <a
+      href="https://wa.me/91XXXXXXXXXX"
+      target="_blank"
+      class="fixed bottom-8 right-8 bg-[#800000] text-white p-4 rounded-full shadow-lg hover:scale-110 transition-transform z-50 flex items-center justify-center"
+    >
+      <svg
+        xmlns="http://www.w3.org/2000/svg"
+        width="24"
+        height="24"
+        viewBox="0 0 24 24"
+        fill="currentColor"
+      >
+        <path
+          d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L0 24l6.335-1.662c1.72.938 3.659 1.432 5.63 1.433h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"
+        />
+      </svg>
+    </a>
+
+    <footer class="bg-white border-t border-gray-100 pt-24 pb-12">
+      <div
+        class="max-w-7xl mx-auto px-6 grid grid-cols-1 md:grid-cols-3 gap-16 mb-20"
+      >
+        <div>
+          <h5 class="font-serif italic text-xl mb-6">Stay Inspired</h5>
+          <p class="text-xs text-gray-400 tracking-widest uppercase mb-4">
+            Join our monthly newsletter
+          </p>
+          <div class="flex border-b border-gray-300 pb-2">
+            <input
+              type="email"
+              placeholder="Email Address"
+              class="bg-transparent text-sm w-full outline-none placeholder-gray-300 font-light"
+            />
+            <button
+              class="text-[10px] tracking-widest uppercase font-bold text-gray-600"
+            >
+              Join
+            </button>
+          </div>
+        </div>
+
+        <div class="text-center">
+          <h2
+            class="font-serif text-3xl tracking-widest text-[#800000] mb-6 uppercase"
+          >
+            SAAVAN
+          </h2>
+          <div
+            class="flex justify-center space-x-6 text-gray-400 text-xs tracking-widest"
+          >
+            <a href="#" class="hover:text-black">INSTAGRAM</a>
+            <a href="#" class="hover:text-black">PINTEREST</a>
+            <a href="#" class="hover:text-black">FACEBOOK</a>
+          </div>
+        </div>
+
+        <div class="md:text-right">
+          <h5 class="font-serif italic text-xl mb-6">Get in Touch</h5>
+          <p class="text-gray-500 text-sm font-light mb-1">
+            hello@saavanevents.com
+          </p>
+          <p class="text-gray-500 text-sm font-light mb-1">Guwahati, Assam</p>
+          <p class="text-gray-500 text-sm font-light">+91 8638695791</p>
+        </div>
+      </div>
+
+      <div class="text-center border-t border-gray-50 pt-12">
+        <p class="text-[10px] tracking-[0.3em] text-gray-600 uppercase italic">
+          &copy; 2026 Saavan Events Design Co. All Rights Reserved.
+        </p>
+      </div>
+    </footer>
+
+
+
+
+
+
+
+    <script>
+  let currentSlide = 0;
+  const slides = document.querySelectorAll('.testimonial-slide');
+  const dots = document.querySelectorAll('.dot');
+
+  function showSlide(index) {
+    slides.forEach((slide, i) => {
+      slide.style.opacity = i === index ? '1' : '0';
+      slide.style.transform = i === index ? 'translateX(0)' : (i < index ? 'translateX(-20px)' : 'translateX(20px)');
+      slide.style.pointerEvents = i === index ? 'auto' : 'none';
+      
+      dots[i].style.backgroundColor = i === index ? '#800000' : '#e5e7eb';
+      dots[i].style.width = i === index ? '24px' : '6px';
+      dots[i].style.borderRadius = i === index ? '4px' : '50%';
+    });
+  }
+
+  function changeSlide(direction) {
+    currentSlide = (currentSlide + direction + slides.length) % slides.length;
+    showSlide(currentSlide);
+  }
+
+  // Auto-advance every 5 seconds
+  setInterval(() => changeSlide(1), 5000);
+</script>
+  </body>
+</html>
